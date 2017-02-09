@@ -1,6 +1,6 @@
 https://yiqiedeweiyi.github.io/mytest1/
 
-D:\MyGithub\mytest1 [gh-pages กิ +1 ~1 -0 ~]> git add .
-D:\MyGithub\mytest1 [gh-pages กิ +1 ~1 -0 ~]> git commit -m "11"
+git add .
+git commit -m "11"
 
-D:\MyGithub\mytest1 [gh-pages กü]> git push -u origin gh-pages
+git push -u origin gh-pages
