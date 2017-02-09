@@ -1,0 +1,317 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+ 
+<SCRIPT src="js/validate.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/event.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/func.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/progressBar.js" type="text/javascript"></SCRIPT>
+ 
+ 
+ 
+ 
+ 
+ 
+  
+<html> 
+ 
+<title>基本信息</title> 
+ 
+ 
+<script language="javascript"> 
+ 
+ 
+function goCompany() 
+{   
+    	document.forms[0].action = "/CreditCardWeb/AccountCompany.do?act=r&amrm_org=100&amrm_rel_nbr="; 
+    	   	     
+    	document.forms[0].submit(); 
+} 
+ 
+function goAcct() 
+{   
+    	document.forms[0].action = "/CreditCardWeb/AccountCustom.do?act=r&org=100&acct=0006259960041836164"; 
+    	   	     
+    	document.forms[0].submit(); 
+} 
+ 
+ 
+function goBase() {   
+    	document.forms[0].action = "/CreditCardWeb/AccountBase.do?act=r&org=100&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit(); 
+} 
+ 
+function goBaseUsb() {   
+    	document.forms[0].action = "/CreditCardWeb/AccountBase.do?act=r&org=199&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit(); 
+}
+function goBaseOther(org){
+	document.forms[0].action = "/CreditCardWeb/AccountBase.do?act=r&org="+org+"&acct=0006259960041836164"; 
+	     
+	document.forms[0].submit(); 
+}
+function goBaseRmb() {   
+    	document.forms[0].action = "/CreditCardWeb/AccountBase.do?act=r&org=200&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit(); 
+}
+ 
+function goTrade() {   
+    	document.forms[0].action = "/CreditCardWeb/AccountTrans.do?act=r&org=100&acct=0006259960041836164";  
+    	    	     
+    	document.forms[0].submit(); 
+} 
+ 
+function goAllCards() {   
+    	document.forms[0].action = "/CreditCardWeb/AccountCards.do?act=list&org=100&acct=0006259960041836164";  
+    	  	     
+    	document.forms[0].submit(); 
+} 
+ 
+function goApply() {   
+    	document.forms[0].action = "/CreditCardWeb/Contribute.do?act=list&org=100&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit(); 
+} 
+ 
+function goAppInfo() {   
+    	document.forms[0].action = "/CreditCardWeb/AppInfo.do?act=r&org=100&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit(); 
+} 
+ 
+function getBudgetInfo() {
+        document.forms[0].action = "/CreditCardWeb/CustomBudgetInfo.do?act=r&org=100&acct=0006259960041836164"; 
+    	  	     
+    	document.forms[0].submit();
+}
+ 
+</script>  
+ 
+ 
+ 
+<body  class="body_bg_grey1"> 
+ 
+<form name="accountBaseForm" method="post" action="/CreditCardWeb/AccountBase.do"> 
+    <table align="center" width="98%"   class="dtPanel_Line3" border="0" cellspacing="1" cellpadding="0"> 
+     <tr align="center" class="dtPanel_Top01"  >
+        <td   class="dtPanel_Top01">基本信息明细</td>
+      </tr>
+     </table>
+ 
+    <table align="center" width="98%" class="dtPanel_Line3" border="0" cellspacing="1" cellpadding="0"> 
+     <tr bgcolor="#FFFFFF">
+            <td width="20%" align="right" class="dtPanel_Left_v">&nbsp;机构：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;550</td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;产品名称：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td width="20%" align="right" class="dtPanel_Left_v">&nbsp;客户号：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;0000000000028760062</td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;姓名：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+        </tr>
+        
+        <tr bgcolor="#FFFFFF">
+            <td width="10%" align="right" class="dtPanel_Left_v">&nbsp;婚姻状况：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;已婚有子女 </td> 
+         	<td width="10%" align="right" class="dtPanel_Left_v">&nbsp;家庭人口：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;0</td> 
+        </tr>
+        
+        <tr bgcolor="#FFFFFF"> 
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;个人年收入：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;60000.00</td>      
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+       	</tr> 
+       	
+       	<tr bgcolor="#FFFFFF"> 
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;证件类型：</td> 
+          	<td width="30%" align="left" class="dtPanel_Main">&nbsp;临时/居民身份证号码 </td>         
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;证件号码：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+       	</tr> 
+       	
+       	<tr bgcolor="#FFFFFF"> 
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;单位地址：</td> 
+          	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;福建省龙岩市新罗</td>
+       	</tr> 
+       	
+       	<tr bgcolor="#FFFFFF"> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;单位全称：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;龙岩市新罗</td>   
+            <td width="20%" align="right" class="dtPanel_Left_v">&nbsp;单位组织机构代码：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;null</td>   
+       	</tr> 
+       	
+       	<tr bgcolor="#FFFFFF"> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;单位电话：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;5972313312 </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;单位邮编：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;364000</td> 
+       	</tr> 
+       	
+       	
+       	<tr bgcolor="#FFFFFF"> 
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;家庭地址：</td> 
+         	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;福建省龙岩市新罗区   
+       	</tr>
+       	
+       	<tr bgcolor="#FFFFFF"> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;家庭邮编：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;364000 </td>  
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;家庭电话：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;597</td>     
+       	</tr>
+       	
+        <tr bgcolor="#FFFFFF">
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;手机号码：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td>  
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;职位：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;
+         	
+         	总经理级以上(含) 
+         	
+         	</td>
+        </tr> 
+       	
+       	<tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;电子邮件地址：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp; </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;联系人单位：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp; </td>         
+       	</tr> 
+       	
+        <tr bgcolor="#FFFFFF">
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;联系人姓名：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;苏红清  </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;联系人电话：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+       </tr>   
+       
+        <tr bgcolor="#FFFFFF">
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;账单方式：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;纸质账单 </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;</td> 
+       </tr>  
+       
+       <tr bgcolor="#FFFFFF">
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;以前邮寄地址：</td> 
+         	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;福建省龙岩市新罗区 </td> 
+       </tr> 
+       
+       <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;当前邮寄地址：</td> 
+         	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;福建省龙岩市新罗区 </td> 
+       </tr> 
+ 
+        <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;客户级信用额度：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;52000.00 </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;客户级可用额度：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;-2552.40 </td>             	
+       </tr>
+        <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;客户级临时额度：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;0.00 </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;客户级临时额度到期日：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;00000000 </td> 
+       </tr>
+       
+       <tr bgcolor="#FFFFFF">
+          	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人姓名：</td> 
+         	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;吴桂东               </td> 
+       </tr> 
+       
+       <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人证件号码：</td> 
+         	<td colspan=3 width="30%" align="left" class="dtPanel_Main">&nbsp;352622651111001           </td> 
+       </tr> 
+ 
+        <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人所属一级分行名称：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp; </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人网点(支行)名称：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp; </td>             	
+        </tr>
+        <tr bgcolor="#FFFFFF">
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人所属一级分行发卡行号：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;739009999 </td> 
+         	<td width="20%" align="right" class="dtPanel_Left_v">&nbsp;拓展人网点(支行)编号：</td> 
+         	<td width="30%" align="left" class="dtPanel_Main">&nbsp;539007001 </td> 
+       </tr>
+    </table>
+    
+    
+ 
+ 
+ <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+	<tr>
+			<td height="10" align="center">
+			</td>
+	</tr>
+	<tr> 
+			<td height="25" align="center"> 
+			   
+				 
+				<input type="button" name="acct" value="账户情况" class="Button" onClick="goAcct()"> &nbsp; 
+				<input type="button" name="trade" value="交易情况" class="Button" onClick="goTrade()"> &nbsp;  
+				<input type="button" name="apply" value="贡献信息" class="Button" onClick="goApply()">&nbsp;
+				</td>
+	</tr>	
+	<tr> 
+			<td height="50" align="center"> 			
+				<input type="button" name="allcards" value="附卡信息" class="Button" onClick="goAllCards()">&nbsp;
+				<input type="button" name="appinfo" value="申请信息" class="Button" onClick="goAppInfo()">&nbsp;
+				<input type="button" name="budgetinfo" value="专项商户分期额度信息" class="Button" onClick="getBudgetInfo()">&nbsp;
+				
+		    <!--控制按钮的显示-->
+								
+				
+				
+				<input name="back" type="button" class="Button" value="关闭" onClick="window.close()"/>&nbsp;
+			</td> 
+	</tr> 
+  </table> 
+ 
+</form> 
+ 
+</body> 
+</html> 
+ 
+ 
+
